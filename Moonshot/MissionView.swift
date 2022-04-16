@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct MissionView: View {
-    struct CrewMember {
-        let role: String
-        let astronaut: Astronaut
-    }
+//    struct CrewMember {
+//        let role: String
+//        let astronaut: Astronaut
+//    }
     
     let mission: Mission
     let crew: [CrewMember]
@@ -54,38 +54,7 @@ struct MissionView: View {
                     .padding(.horizontal, 23)
                     .padding(.bottom, 15)
                     
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack {
-                            ForEach(crew, id: \.role) { crewMember in
-                                NavigationLink {
-                                    AstronautView(astronaut: crewMember.astronaut)
-                                } label: {
-                                    HStack {
-                                        Image(crewMember.astronaut.id)
-                                            .resizable()
-                                            .frame(width: 104, height: 72)
-                                            .clipShape(Circle())
-                                            .overlay(
-                                                Circle()
-                                                    .strokeBorder(.white, lineWidth: 0.3)
-                                            )
-                                        
-                                        VStack(alignment: .leading) {
-                                            Text(crewMember.astronaut.name)
-                                                .foregroundColor(.white)
-                                                .font(.headline)
-                                                .padding(.bottom, 0.5)
-                                            
-                                            Text(crewMember.role)
-                                                .foregroundColor(.secondary)
-                                        }
-                                    }
-                                    .padding(.horizontal)
-                                }
-                            }
-                        }
-                    }
-                    .padding(.bottom, 20)
+                    AstronautsScroll(crew: crew, mission: mission)
                 }
                 .padding(.vertical, 15)
             }

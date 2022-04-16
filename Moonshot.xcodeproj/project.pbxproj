@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA13D847280A408E000598C8 /* AstronautsScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13D846280A408E000598C8 /* AstronautsScroll.swift */; };
+		FA13D849280A4143000598C8 /* CrewMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13D848280A4143000598C8 /* CrewMember.swift */; };
 		FA17C26028077B9400617B40 /* astronauts.json in Resources */ = {isa = PBXBuildFile; fileRef = FA17C25E28077B9400617B40 /* astronauts.json */; };
 		FA17C26128077B9400617B40 /* missions.json in Resources */ = {isa = PBXBuildFile; fileRef = FA17C25F28077B9400617B40 /* missions.json */; };
 		FA17C26328077C4E00617B40 /* Astronaut.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA17C26228077C4E00617B40 /* Astronaut.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA13D846280A408E000598C8 /* AstronautsScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautsScroll.swift; sourceTree = "<group>"; };
+		FA13D848280A4143000598C8 /* CrewMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewMember.swift; sourceTree = "<group>"; };
 		FA17C25E28077B9400617B40 /* astronauts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = astronauts.json; sourceTree = "<group>"; };
 		FA17C25F28077B9400617B40 /* missions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = missions.json; sourceTree = "<group>"; };
 		FA17C26228077C4E00617B40 /* Astronaut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astronaut.swift; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		FA66D43A2803AB74005DCB7F = {
 			isa = PBXGroup;
 			children = (
+				FA13D848280A4143000598C8 /* CrewMember.swift */,
+				FA13D846280A408E000598C8 /* AstronautsScroll.swift */,
 				FA66D4452803AB74005DCB7F /* Moonshot */,
 				FA66D4442803AB74005DCB7F /* Products */,
 			);
@@ -167,7 +173,9 @@
 				FA17C26328077C4E00617B40 /* Astronaut.swift in Sources */,
 				FA2633CA2808E7CA00FFC160 /* AstronautView.swift in Sources */,
 				FA17C269280786F300617B40 /* Color-Theme.swift in Sources */,
+				FA13D849280A4143000598C8 /* CrewMember.swift in Sources */,
 				FA66D4492803AB74005DCB7F /* ContentView.swift in Sources */,
+				FA13D847280A408E000598C8 /* AstronautsScroll.swift in Sources */,
 				FA66D4472803AB74005DCB7F /* MoonshotApp.swift in Sources */,
 				FA17C26728077F6100617B40 /* Mission.swift in Sources */,
 				FA17C26528077CD000617B40 /* Bundle-Decodable.swift in Sources */,
